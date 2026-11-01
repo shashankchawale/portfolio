@@ -223,7 +223,9 @@
 
       const name = document.getElementById('formName').value.trim();
       const email = document.getElementById('formEmail').value.trim();
+      const company = document.getElementById('formCompany') ? document.getElementById('formCompany').value.trim() : '';
       const type = document.getElementById('formType').value;
+      const budget = document.getElementById('formBudget') ? document.getElementById('formBudget').value : '';
       const description = document.getElementById('formDescription').value.trim();
 
       const errors = [];
@@ -244,8 +246,8 @@
 
       if (!description) {
         errors.push('Please describe your project.');
-      } else if (description.length < 15) {
-        errors.push('Please provide a slightly more detailed project description.');
+      } else if (description.length < 10) {
+        errors.push('Please provide a short description of your project.');
       }
 
       if (errors.length > 0) {
@@ -254,18 +256,54 @@
       }
 
       const submitBtn = document.getElementById('formSubmitBtn');
-      submitBtn.textContent = 'Sending Inquiry...';
+      const originalBtnHtml = submitBtn.innerHTML;
       submitBtn.disabled = true;
+      submitBtn.textContent = 'Connecting to WhatsApp...';
+
+      // Construct nicely formatted WhatsApp message
+      const messageParts = [
+        '👋 Hello Shashank, I would like to discuss a project inquiry:',
+        '',
+        '👤 Client Name: ' + name,
+        '✉️ Email: ' + email,
+        company ? '🏢 Company: ' + company : '',
+        '🌐 Project Type: ' + type,
+        budget ? '💰 Budget: ' + budget : '',
+        '',
+        '📝 Project Details:',
+        description
+      ].filter(function (part) { return part !== ''; });
+
+      const fullMessage = messageParts.join('\n');
+      const whatsappUrl = 'https://wa.me/917083082721?text=' + encodeURIComponent(fullMessage);
+
+      // Open WhatsApp immediately within user event to avoid popup blocker
+      let winOpened = false;
+      try {
+        const win = window.open(whatsappUrl, '_blank');
+        if (win && !win.closed && typeof win.closed !== 'undefined') {
+          winOpened = true;
+        }
+      } catch (err) {
+        winOpened = false;
+      }
+
+      if (!winOpened) {
+        // Fallback for strict popup blockers or direct navigation
+        setTimeout(function () {
+          window.location.href = whatsappUrl;
+        }, 300);
+      }
+
+      showFormMessage(
+        '✓ Directing you to WhatsApp to send your inquiry! If it didn’t open automatically, <a href="' + whatsappUrl + '" target="_blank" style="color: #D5FF42; font-weight: 700; text-decoration: underline;">click here to open WhatsApp directly</a>.',
+        'success'
+      );
 
       setTimeout(function () {
-        showFormMessage(
-          'Thank you, ' + name + '! Your project inquiry has been received. I will review your requirements and respond within 24 hours.',
-          'success'
-        );
-        submitBtn.textContent = 'Send Project Inquiry →';
+        submitBtn.innerHTML = originalBtnHtml;
         submitBtn.disabled = false;
-        inquiryForm.reset();
-      }, 1200);
+      }, 2500);
     });
   }
 
@@ -274,7 +312,7 @@
   }
 
   function showFormMessage(message, type) {
-    formMessage.textContent = message;
+    formMessage.innerHTML = message;
     formMessage.className = 'form-message ' + type;
     formMessage.style.display = 'block';
     formMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
