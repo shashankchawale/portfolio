@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>Shashank Chawale — Freelance Web Developer | Modern Websites & AI Solutions</title>
+  <meta name="description" content="Freelance web developer and CSE student from Nagpur, India. I design and develop modern websites, e-commerce platforms, and AI-powered applications for businesses and startups.">
+  <meta name="keywords" content="freelance web developer, website development, Nagpur, India, AI, machine learning, portfolio, Shashank Chawale, Cotton Mitra, Guna Pharma">
+  <meta name="author" content="Shashank Chawale">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Shashank Chawale — Freelance Web Developer & AI Enthusiast">
+  <meta property="og:description" content="I design and develop modern websites, intelligent applications, and digital experiences that help businesses grow.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_IN">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Shashank Chawale — Freelance Web Developer">
+  <meta name="twitter:description" content="I design and develop modern websites, intelligent applications, and digital experiences that help businesses grow.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23111318'/%3E%3Ctext x='50%25' y='55%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial Black' font-size='18' font-weight='900' fill='%23D5FF42'%3ES%3C/text%3E%3C/svg%3E">
+
+  <!-- Google Fonts: Oswald (Hero & Big display) + Plus Jakarta Sans (Clean Modern UI) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========== NAVIGATION ========== -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container nav-container">
+      <a href="#home" class="nav-logo" aria-label="Shashank Chawale — Home">
+        <span class="logo-accent">SHASHANK</span><span class="logo-dot">.</span>
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#solutions">Solutions</a>
+        <a href="#projects">Projects</a>
+        <a href="#services">Services</a>
+        <a href="#skills">Skills</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="nav-right">
+        <a href="#inquiry" class="nav-cta" id="navHireMe">Hire Me</a>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="mobile-nav" id="mobileNav" role="dialog" aria-label="Mobile navigation">
+    <div class="mobile-nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#solutions">Solutions</a>
+      <a href="#projects">Projects</a>
+      <a href="#services">Services</a>
+      <a href="#skills">Skills</a>
+      <a href="#process">Process</a>
+      <a href="#contact">Contact</a>
+      <a href="#inquiry" class="nav-cta mobile-cta">Hire Me</a>
+    </div>
+  </div>
+
+  <!-- ========== HERO SECTION ========== -->
+  <header class="hero" id="home">
+    <div class="hero-aurora-glow" aria-hidden="true"></div>
+
+    <div class="container">
+      <div class="hero-content">
+        <!-- Main Display Heading (Handshake Style Ultra-Condensed Typography) -->
+        <h1 class="hero-heading reveal reveal-delay-1">
+          LET'S <span class="highlight">BUILD</span><br>
+          YOUR NEXT<br>
+          <span class="highlight">BIG IDEA.</span>
+        </h1>
+
+        <!-- Subtitle -->
+        <p class="hero-subtitle reveal reveal-delay-2">
+          I design and develop modern websites, intelligent applications, and digital experiences that help businesses grow.
+        </p>
+
+        <!-- White Capsule Pill Search Bar (Handshake Style) -->
+        <div class="hero-search-wrapper reveal reveal-delay-3">
+          <div class="hero-search-bar" id="heroSearchBar">
+            <span class="search-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+            </span>
+            <input type="text" id="heroSearchInput" placeholder="What digital solution are you looking for?" aria-label="What digital solution are you looking for?">
+            <button class="hero-search-btn" id="heroSearchBtn" aria-label="Submit search query and discuss project">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="19" x2="12" y2="5"></line>
+                <polyline points="5 12 12 5 19 12"></polyline>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Sleek Quick Tags -->
+        <div class="hero-tags reveal reveal-delay-4" id="heroTags">
+          <button type="button" class="hero-tag" data-service="Website Development">Website Development</button>
+          <button type="button" class="hero-tag" data-service="E-commerce Website">E-commerce Websites</button>
+          <button type="button" class="hero-tag" data-service="AI/ML Application">AI/ML Projects</button>
+          <button type="button" class="hero-tag" data-service="Business Website">Business Websites</button>
+          <button type="button" class="hero-tag" data-service="Portfolio Website">Portfolio Websites</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== SECTION 2: 3x2 SOLUTIONS GRID (Direct Handshake Translation) ========== -->
+  <section class="quick-solutions" id="solutions">
+    <div class="container">
+      <div class="solutions-header reveal">
+        <h2 class="solutions-title">Get High-Impact Web & AI Solutions</h2>
+        <p class="solutions-subtitle">From custom business web applications to intelligent machine learning systems.</p>
+      </div>
+
+      <div class="solutions-grid">
+        <!-- Card 1 -->
+        <div class="sol-card reveal reveal-delay-1" onclick="document.getElementById('inquiry').scrollIntoView({behavior:'smooth'})">
+          <div class="sol-card-top">
+            <h3 class="sol-title">Full-Stack Web Development</h3>
+            <span class="sol-rate">Custom Architecture</span>
+          </div>
+          <div class="sol-card-bottom">
+            <span class="sol-tags">Custom Architecture · Modern Stack · Fast Performance</span>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="sol-card reveal reveal-delay-2" onclick="document.getElementById('inquiry').scrollIntoView({behavior:'smooth'})">
+          <div class="sol-card-top">
+            <h3 class="sol-title">E-Commerce & Online Stores</h3>
+            <span class="sol-rate">Complete Setup</span>
+          </div>
+          <div class="sol-card-bottom">
+            <span class="sol-tags">Product Catalog · Supabase DB · WhatsApp Orders</span>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="sol-card reveal reveal-delay-3" onclick="document.getElementById('inquiry').scrollIntoView({behavior:'smooth'})">
+          <div class="sol-card-top">
+            <h3 class="sol-title">AI & Predictive Analytics</h3>
+            <span class="sol-rate">Intelligent Models</span>
+          </div>
+          <div class="sol-card-bottom">
+            <span class="sol-tags">Demand Forecasting · Random Forest · Python & ML</span>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="sol-card reveal reveal-delay-1" onclick="document.getElementById('inquiry').scrollIntoView({behavior:'smooth'})">
+          <div class="sol-card-top">
+            <h3 class="sol-title">High-Converting Landing Pages</h3>
+            <span class="sol-rate">Fast Delivery</span>
+          </div>
+          <div class="sol-card-bottom">
+            <span class="sol-tags">100% Mobile Ready · Lead Capture · Micro-Animations</span>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="sol-card reveal reveal-delay-2" onclick="document.getElementById('inquiry').scrollIntoView({behavior:'smooth'})">
+          <div class="sol-card-top">
+            <h3 class="sol-title">UI/UX & Modern Redesign</h3>
+            <span class="sol-rate">Premium Aesthetics</span>
+          </div>
+          <div class="sol-card-bottom">
+            <span class="sol-tags">Handshake-Inspired Dark UI · Neon Accents · Glassmorphism</span>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="sol-card reveal reveal-delay-3" onclick="document.getElementById('inquiry').scrollIntoView({behavior:'smooth'})">
+          <div class="sol-card-top">
+            <h3 class="sol-title">Performance & Maintenance</h3>
+            <span class="sol-rate">Dedicated Support</span>
+          </div>
+          <div class="sol-card-bottom">
+            <span class="sol-tags">Speed Optimization · Bug Fixing · Continuous Updates</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="solutions-action reveal">
+        <a href="#services" class="btn-primary">Explore all opportunities</a>
+        <p class="solutions-note"><a href="#inquiry">What kind of website does your business need?</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== LOGO / TECH TRUST MARQUEE (Handshake "Employers hiring" style) ========== -->
+  <section class="trust-marquee-section">
+    <div class="container">
+      <div class="trust-label reveal">
+        <span class="green-indicator"></span>
+        <span>Technologies & frameworks powering every build</span>
+      </div>
+
+      <div class="trust-cards-row reveal reveal-delay-1">
+        <div class="trust-card">
+          <span class="trust-icon">🐍</span>
+          <span class="trust-name">Python</span>
+        </div>
+        <div class="trust-card">
+          <span class="trust-icon">⚡</span>
+          <span class="trust-name">JavaScript</span>
+        </div>
+        <div class="trust-card">
+          <span class="trust-icon">⚛️</span>
+          <span class="trust-name">React</span>
+        </div>
+        <div class="trust-card">
+          <span class="trust-icon">🔥</span>
+          <span class="trust-name">Supabase</span>
+        </div>
+        <div class="trust-card">
+          <span class="trust-icon">🧠</span>
+          <span class="trust-name">Machine Learning</span>
+        </div>
+        <div class="trust-card">
+          <span class="trust-icon">▲</span>
+          <span class="trust-name">Vercel</span>
+        </div>
+        <div class="trust-card">
+          <span class="trust-icon">🐬</span>
+          <span class="trust-name">MySQL</span>
+        </div>
+        <div class="trust-card">
+          <span class="trust-icon">🐙</span>
+          <span class="trust-name">GitHub</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT / VALUE PROPOSITION ========== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <span class="section-label">About Me</span>
+          <h2 class="section-heading">Turning Ideas Into<br><span class="accent-text">Digital Experiences</span></h2>
+          <p>
+            I'm <strong>Shashank Chawale</strong>, a Computer Science and Engineering student passionate about web development, artificial intelligence, and emerging technologies.
+          </p>
+          <p>
+            I help individuals, startups, and businesses establish a strong digital presence through modern, responsive, and user-friendly websites.
+          </p>
+          <div class="about-actions" style="margin-top: 24px;">
+            <a href="#inquiry" class="btn-primary">Start a Project →</a>
+          </div>
+        </div>
+
+        <div class="about-stats">
+          <div class="stat-card reveal reveal-delay-1">
+            <div class="stat-number">2+</div>
+            <div class="stat-label">Featured<br>Projects</div>
+          </div>
+          <div class="stat-card reveal reveal-delay-2">
+            <div class="stat-number">5+</div>
+            <div class="stat-label">Programming<br>Technologies</div>
+          </div>
+          <div class="stat-card reveal reveal-delay-3">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Commitment<br>to Every Project</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FEATURED SHOWCASE ROWS (The Iconic Handshake 3-Block Layout) ========== -->
+  <section class="featured-showcase" id="projects">
+    <div class="container">
+      <div class="showcase-header reveal">
+        <h2 class="showcase-main-title">
+          The largest, most trusted network for<br>
+          <span class="accent-text">careers in the AI economy</span>
+        </h2>
+        <p class="showcase-subhead">
+          Production systems engineered for real-world impact, intelligent decision-making, and high user conversion.
+        </p>
+      </div>
+
+      <!-- SHOWCASE ROW 1: COTTON MITRA (Green Glowing Visual Card Left, Content Right) -->
+      <div class="showcase-row reveal">
+        <!-- Visual Green Radiant Card -->
+        <div class="showcase-visual-wrapper">
+          <div class="showcase-canvas green-canvas">
+            <!-- Floating UI Card Top -->
+            <div class="floating-ui-card top-card">
+              <div class="floating-ui-avatar">🌿</div>
+              <div class="floating-ui-text">
+                <div class="floating-ui-title">Cotton Demand Engine</div>
+                <div class="floating-ui-desc">5.2M Bales · Predicted Growth +12.5%</div>
+              </div>
+            </div>
+
+            <!-- Main Project Screenshot in Frame -->
+            <div class="project-mockup-frame">
+              <img src="assets/images/cotton-mitra.jpg" alt="Cotton Mitra — AI-powered cotton demand forecasting dashboard" loading="lazy" width="640" height="380">
+            </div>
+
+            <!-- Floating UI Card Bottom / Decision Recommendation -->
+            <div class="floating-ui-card bottom-card">
+              <div class="floating-badge-icon">📈</div>
+              <div class="floating-ui-text">
+                <div class="floating-ui-title">Recommendation: SELL / MONITOR</div>
+                <div class="floating-ui-desc">Market Index: ₹68,500/Candy · Stability: 92%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Content Side -->
+        <div class="showcase-content">
+          <div class="showcase-category">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            AI-Powered Agricultural Technology
+          </div>
+          <h3 class="showcase-item-title">Cotton Mitra</h3>
+          <p class="showcase-item-desc">
+            Cotton Mitra is an AI-powered cotton demand forecasting and inventory decision-support platform designed to improve decision-making across the cotton supply chain. The platform helps users understand market trends, manage inventory, and make smarter selling and procurement decisions.
+          </p>
+
+          <div class="showcase-features-list">
+            <span class="showcase-pill">AI Demand Forecasting</span>
+            <span class="showcase-pill">Inventory Management</span>
+            <span class="showcase-pill">Market Intelligence</span>
+            <span class="showcase-pill">Farmer Advisory</span>
+            <span class="showcase-pill">Explainable AI</span>
+            <span class="showcase-pill">SELL / HOLD / MONITOR</span>
+            <span class="showcase-pill">Geospatial Clustering</span>
+          </div>
+
+          <div class="showcase-tech-stack">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">Machine Learning</span>
+            <span class="tech-tag">Random Forest</span>
+            <span class="tech-tag">XGBoost</span>
+            <span class="tech-tag">JavaScript</span>
+          </div>
+
+          <div class="showcase-actions">
+            <a href="#inquiry" class="btn-primary" onclick="prefillInquiry('Cotton Mitra AI Platform', 'AI/ML Application')">View Project</a>
+            <a href="#inquiry" class="btn-outline" onclick="prefillInquiry('Cotton Mitra Features Inquiry', 'AI/ML Application')">Explore Features</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- SHOWCASE ROW 2: GUNA PHARMA (Content Left, Green Glowing Visual Card Right) -->
+      <div class="showcase-row reverse-row reveal">
+        <!-- Visual Green Radiant Card -->
+        <div class="showcase-visual-wrapper">
+          <div class="showcase-canvas green-canvas">
+            <!-- Floating UI Card Top -->
+            <div class="floating-ui-card top-card">
+              <div class="floating-ui-avatar pharma-avatar">💊</div>
+              <div class="floating-ui-text">
+                <div class="floating-ui-title">GUNA PHARMA Storefront</div>
+                <div class="floating-ui-desc">Live on Vercel · Instant WhatsApp Orders</div>
+              </div>
+            </div>
+
+            <!-- Main Project Screenshot in Frame -->
+            <div class="project-mockup-frame">
+              <img src="assets/images/guna-pharma.jpg" alt="GUNA PHARMA — Healthcare and beauty products e-commerce website" loading="lazy" width="640" height="380">
+            </div>
+
+            <!-- Floating UI Card Bottom -->
+            <div class="floating-ui-card bottom-card">
+              <div class="floating-badge-icon">🛒</div>
+              <div class="floating-ui-text">
+                <div class="floating-ui-title">Supabase Cloud Database</div>
+                <div class="floating-ui-desc">Admin Dashboard · Real-time Catalog</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Content Side -->
+        <div class="showcase-content">
+          <div class="showcase-category">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            Healthcare & E-Commerce Website
+          </div>
+          <h3 class="showcase-item-title">GUNA PHARMA</h3>
+          <p class="showcase-item-desc">
+            GUNA PHARMA is a modern healthcare and beauty products platform designed to provide customers with a simple and convenient online shopping experience. The website combines pharmaceutical product presentation, beauty and wellness categories, and a modern user-friendly interface.
+          </p>
+
+          <div class="showcase-features-list">
+            <span class="showcase-pill">Product Showcase</span>
+            <span class="showcase-pill">Medicine Categories</span>
+            <span class="showcase-pill">Beauty & Cosmetics</span>
+            <span class="showcase-pill">Responsive UI</span>
+            <span class="showcase-pill">WhatsApp Integration</span>
+            <span class="showcase-pill">Supabase Backend</span>
+            <span class="showcase-pill">Admin Dashboard</span>
+          </div>
+
+          <div class="showcase-tech-stack">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">Supabase</span>
+            <span class="tech-tag">Vercel</span>
+          </div>
+
+          <div class="showcase-actions">
+            <a href="https://guna-pharma-org.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-primary">
+              View Live Website ↗
+            </a>
+            <a href="#inquiry" class="btn-outline" onclick="prefillInquiry('GUNA PHARMA E-Commerce System', 'E-commerce Website')">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- SHOWCASE ROW 3: GROW YOUR BUSINESS (Canvas Left, Content Right) -->
+      <div class="showcase-row reveal">
+        <!-- Visual Green Radiant Card -->
+        <div class="showcase-visual-wrapper">
+          <div class="showcase-canvas green-canvas client-canvas">
+            <!-- Simulated Handshake-style Chat/Engagement Card -->
+            <div class="floating-chat-bubble">
+              <div class="chat-avatar">💼</div>
+              <div class="chat-message-body">
+                <div class="chat-sender">Shashank Chawale · Web Developer</div>
+                <div class="chat-text">"Let's turn your vision into a lightning-fast, high-converting digital platform."</div>
+              </div>
+            </div>
+
+            <div class="client-spotlight-card">
+              <div class="spotlight-header">
+                <span class="spotlight-badge">Custom Engineering</span>
+                <span class="spotlight-metric">100% Commitment</span>
+              </div>
+              <h4 class="spotlight-title">Have a Custom Project in Mind?</h4>
+              <p class="spotlight-desc">Websites, E-Commerce platforms, or bespoke AI dashboards built with clean code and modern aesthetics.</p>
+              <div class="spotlight-tags">
+                <span>Fast Delivery</span>
+                <span>SEO Optimized</span>
+                <span>Full Ownership</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Content Side -->
+        <div class="showcase-content">
+          <div class="showcase-category">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            Future & Custom Projects
+          </div>
+          <h3 class="showcase-item-title">Grow Your Digital Brand</h3>
+          <p class="showcase-item-desc">
+            Whether starting from scratch or redesigning an existing website, I craft tailor-made, high-converting digital experiences designed to engage your visitors and scale your business operations.
+          </p>
+
+          <div class="showcase-features-list">
+            <span class="showcase-pill">Rapid Prototyping</span>
+            <span class="showcase-pill">Full-Stack Implementation</span>
+            <span class="showcase-pill">Custom Domain Setup</span>
+            <span class="showcase-pill">Database Integration</span>
+            <span class="showcase-pill">Ongoing Maintenance</span>
+          </div>
+
+          <div class="showcase-actions" style="margin-top: 24px;">
+            <a href="#inquiry" class="btn-primary">Start Your Project →</a>
+            <a href="#services" class="btn-outline">Browse All Services</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== DETAILED SERVICES SECTION ========== -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="services-header reveal">
+        <span class="section-label">Services</span>
+        <h2 class="section-heading">WHAT I CAN <span class="accent-text">BUILD</span> FOR YOUR BUSINESS</h2>
+        <p class="section-subtitle" style="margin: 0 auto;">From your first idea to a fully functional website, I help turn your vision into reality.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-card reveal reveal-delay-1">
+          <div class="service-icon">🏢</div>
+          <h3 class="service-title">Business Website Development</h3>
+          <ul class="service-list">
+            <li>Professional business websites</li>
+            <li>Company websites</li>
+            <li>Landing pages</li>
+            <li>Responsive layouts</li>
+          </ul>
+          <a href="#inquiry" class="service-cta" onclick="prefillInquiry('Business Website Development', 'Business Website')">Discuss Your Project →</a>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card reveal reveal-delay-2">
+          <div class="service-icon">🛒</div>
+          <h3 class="service-title">E-commerce Website Development</h3>
+          <ul class="service-list">
+            <li>Online shopping websites</li>
+            <li>Product catalogues</li>
+            <li>Product management</li>
+            <li>Admin dashboards</li>
+          </ul>
+          <a href="#inquiry" class="service-cta" onclick="prefillInquiry('E-commerce Website Development', 'E-commerce Website')">Discuss Your Project →</a>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card reveal reveal-delay-3">
+          <div class="service-icon">💼</div>
+          <h3 class="service-title">Portfolio Website Development</h3>
+          <ul class="service-list">
+            <li>Personal portfolios</li>
+            <li>Freelancer portfolios</li>
+            <li>Professional landing pages</li>
+            <li>Creative personal branding</li>
+          </ul>
+          <a href="#inquiry" class="service-cta" onclick="prefillInquiry('Portfolio Website Development', 'Portfolio Website')">Discuss Your Project →</a>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card reveal reveal-delay-1">
+          <div class="service-icon">🤖</div>
+          <h3 class="service-title">AI & Machine Learning Solutions</h3>
+          <ul class="service-list">
+            <li>AI-powered applications</li>
+            <li>Machine learning integration</li>
+            <li>Prediction systems</li>
+            <li>Intelligent dashboards</li>
+          </ul>
+          <a href="#inquiry" class="service-cta" onclick="prefillInquiry('AI & Machine Learning Solutions', 'AI/ML Application')">Discuss Your Project →</a>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="service-card reveal reveal-delay-2">
+          <div class="service-icon">🎨</div>
+          <h3 class="service-title">Website Redesign</h3>
+          <ul class="service-list">
+            <li>Modern UI/UX improvements</li>
+            <li>Responsive redesign</li>
+            <li>Website speed improvements</li>
+            <li>Better user experience</li>
+          </ul>
+          <a href="#inquiry" class="service-cta" onclick="prefillInquiry('Website Redesign', 'Website Redesign')">Discuss Your Project →</a>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="service-card reveal reveal-delay-3">
+          <div class="service-icon">🔧</div>
+          <h3 class="service-title">Website Maintenance</h3>
+          <ul class="service-list">
+            <li>Bug fixing</li>
+            <li>Content updates</li>
+            <li>Performance optimization</li>
+            <li>Feature improvements</li>
+          </ul>
+          <a href="#inquiry" class="service-cta" onclick="prefillInquiry('Website Maintenance & Optimization', 'Other')">Discuss Your Project →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== WHY WORK WITH ME ========== -->
+  <section class="benefits" id="benefits">
+    <div class="container">
+      <div class="benefits-header reveal">
+        <span class="section-label">Why Choose Me</span>
+        <h2 class="section-heading">More Than Just <span class="accent-text">Writing Code</span></h2>
+      </div>
+
+      <div class="benefits-grid">
+        <div class="benefit-card reveal reveal-delay-1">
+          <div class="benefit-icon">✨</div>
+          <h3 class="benefit-title">Modern Design</h3>
+          <p class="benefit-desc">Beautiful and professional website interfaces that make an indelible first impression on your clients.</p>
+        </div>
+        <div class="benefit-card reveal reveal-delay-2">
+          <div class="benefit-icon">📱</div>
+          <h3 class="benefit-title">Responsive Development</h3>
+          <p class="benefit-desc">Websites that look stunning and function flawlessly across mobile, tablet, and desktop viewports.</p>
+        </div>
+        <div class="benefit-card reveal reveal-delay-3">
+          <div class="benefit-icon">⚡</div>
+          <h3 class="benefit-title">Performance Focus</h3>
+          <p class="benefit-desc">Fast-loading, SEO-ready, and lightweight experiences engineered for optimal Core Web Vitals.</p>
+        </div>
+        <div class="benefit-card reveal reveal-delay-4">
+          <div class="benefit-icon">🤝</div>
+          <h3 class="benefit-title">Dedicated Support</h3>
+          <p class="benefit-desc">Direct, transparent communication and complete personal commitment to every single project requirement.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TECHNOLOGY STACK ========== -->
+  <section class="tech-stack" id="skills">
+    <div class="container">
+      <div class="tech-header reveal">
+        <span class="section-label">Tech Stack</span>
+        <h2 class="section-heading">TOOLS I USE TO BUILD<br><span class="accent-text">DIGITAL EXPERIENCES</span></h2>
+      </div>
+
+      <!-- Programming -->
+      <div class="tech-category reveal">
+        <div class="tech-category-title">Programming Languages</div>
+        <div class="tech-grid">
+          <div class="tech-card"><div class="tech-card-icon">🇨</div><span class="tech-card-name">C</span></div>
+          <div class="tech-card"><div class="tech-card-icon">⊕</div><span class="tech-card-name">C++</span></div>
+          <div class="tech-card"><div class="tech-card-icon">☕</div><span class="tech-card-name">Java</span></div>
+          <div class="tech-card"><div class="tech-card-icon">🐍</div><span class="tech-card-name">Python</span></div>
+          <div class="tech-card"><div class="tech-card-icon">⚡</div><span class="tech-card-name">JavaScript</span></div>
+        </div>
+      </div>
+
+      <!-- Frontend -->
+      <div class="tech-category reveal">
+        <div class="tech-category-title">Frontend Engineering</div>
+        <div class="tech-grid">
+          <div class="tech-card"><div class="tech-card-icon">🌐</div><span class="tech-card-name">HTML5</span></div>
+          <div class="tech-card"><div class="tech-card-icon">🎨</div><span class="tech-card-name">CSS3</span></div>
+          <div class="tech-card"><div class="tech-card-icon">⚡</div><span class="tech-card-name">JavaScript</span></div>
+          <div class="tech-card"><div class="tech-card-icon">⚛️</div><span class="tech-card-name">React</span></div>
+        </div>
+      </div>
+
+      <!-- Backend & Database -->
+      <div class="tech-category reveal">
+        <div class="tech-category-title">Backend & Database Systems</div>
+        <div class="tech-grid">
+          <div class="tech-card"><div class="tech-card-icon">🔥</div><span class="tech-card-name">Supabase</span></div>
+          <div class="tech-card"><div class="tech-card-icon">🍃</div><span class="tech-card-name">MongoDB</span></div>
+          <div class="tech-card"><div class="tech-card-icon">🐬</div><span class="tech-card-name">MySQL</span></div>
+        </div>
+      </div>
+
+      <!-- AI & ML -->
+      <div class="tech-category reveal">
+        <div class="tech-category-title">AI & Machine Learning</div>
+        <div class="tech-grid">
+          <div class="tech-card"><div class="tech-card-icon">🐍</div><span class="tech-card-name">Python</span></div>
+          <div class="tech-card"><div class="tech-card-icon">🧠</div><span class="tech-card-name">Scikit-learn</span></div>
+          <div class="tech-card"><div class="tech-card-icon">🌲</div><span class="tech-card-name">Random Forest</span></div>
+          <div class="tech-card"><div class="tech-card-icon">🚀</div><span class="tech-card-name">XGBoost</span></div>
+        </div>
+      </div>
+
+      <!-- Tools -->
+      <div class="tech-category reveal">
+        <div class="tech-category-title">Developer Tools & Deployment</div>
+        <div class="tech-grid">
+          <div class="tech-card"><div class="tech-card-icon">🔀</div><span class="tech-card-name">Git</span></div>
+          <div class="tech-card"><div class="tech-card-icon">🐙</div><span class="tech-card-name">GitHub</span></div>
+          <div class="tech-card"><div class="tech-card-icon">💻</div><span class="tech-card-name">VS Code</span></div>
+          <div class="tech-card"><div class="tech-card-icon">▲</div><span class="tech-card-name">Vercel</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== WORK PROCESS ========== -->
+  <section class="process" id="process">
+    <div class="container">
+      <div class="process-header reveal">
+        <span class="section-label">Work Process</span>
+        <h2 class="section-heading">HOW WE BRING YOUR<br><span class="accent-text">IDEA TO LIFE</span></h2>
+      </div>
+
+      <div class="process-steps">
+        <div class="process-step reveal reveal-delay-1">
+          <div class="process-step-number">01</div>
+          <h3 class="process-step-title">Discovery</h3>
+          <p class="process-step-desc">Understand your business goals, target audience, and functional requirements.</p>
+        </div>
+        <div class="process-step reveal reveal-delay-2">
+          <div class="process-step-number">02</div>
+          <h3 class="process-step-title">Design</h3>
+          <p class="process-step-desc">Create a modern, clean, user-friendly UI layout with seamless interactions.</p>
+        </div>
+        <div class="process-step reveal reveal-delay-3">
+          <div class="process-step-number">03</div>
+          <h3 class="process-step-title">Development</h3>
+          <p class="process-step-desc">Build, integrate, test, and optimize your website for lightning-fast speeds.</p>
+        </div>
+        <div class="process-step reveal reveal-delay-4">
+          <div class="process-step-number">04</div>
+          <h3 class="process-step-title">Launch</h3>
+          <p class="process-step-desc">Deploy to production, configure your domain, and provide post-launch support.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== INQUIRY FORM ========== -->
+  <section class="inquiry" id="inquiry">
+    <div class="container">
+      <div class="inquiry-container">
+        <div class="inquiry-info reveal">
+          <span class="section-label">Get Started</span>
+          <h2 class="section-heading">HAVE A PROJECT<br><span class="accent-text">IN MIND?</span></h2>
+          <p>Whether you need a business website, an online store, or a custom digital solution, let's discuss how we can build something amazing together.</p>
+
+          <div class="inquiry-highlight">
+            <div class="inquiry-highlight-item">
+              <div class="inquiry-highlight-icon">⏱️</div>
+              <div class="inquiry-highlight-text">
+                <strong>Quick Response</strong><br>
+                I typically respond within 24 hours
+              </div>
+            </div>
+            <div class="inquiry-highlight-item">
+              <div class="inquiry-highlight-icon">💬</div>
+              <div class="inquiry-highlight-text">
+                <strong>Free Consultation</strong><br>
+                Let's discuss your project — no commitment required
+              </div>
+            </div>
+            <div class="inquiry-highlight-item">
+              <div class="inquiry-highlight-icon">🎯</div>
+              <div class="inquiry-highlight-text">
+                <strong>Tailored Solutions</strong><br>
+                Every project gets a custom-engineered approach
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="inquiry-form reveal reveal-delay-2">
+          <form id="inquiryForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="formName">Your Name *</label>
+                <input type="text" id="formName" class="form-input" placeholder="Shashank" required>
+              </div>
+              <div class="form-group">
+                <label for="formEmail">Email Address *</label>
+                <input type="email" id="formEmail" class="form-input" placeholder="shashank@example.com" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="formCompany">Business / Company Name <span class="optional">(optional)</span></label>
+                <input type="text" id="formCompany" class="form-input" placeholder="Acme Inc.">
+              </div>
+              <div class="form-group">
+                <label for="formType">Type of Website *</label>
+                <select id="formType" class="form-select" required>
+                  <option value="" disabled selected>Select website type</option>
+                  <option value="Business Website">Business Website</option>
+                  <option value="E-commerce Website">E-commerce Website</option>
+                  <option value="Portfolio Website">Portfolio Website</option>
+                  <option value="Landing Page">Landing Page</option>
+                  <option value="AI/ML Application">AI/ML Application</option>
+                  <option value="Website Redesign">Website Redesign</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="formBudget">Project Budget <span class="optional">(optional)</span></label>
+              <select id="formBudget" class="form-select">
+                <option value="" disabled selected>Select budget range</option>
+                <option value="Under ₹10,000">Under ₹10,000</option>
+                <option value="₹10,000 – ₹25,000">₹10,000 – ₹25,000</option>
+                <option value="₹25,000 – ₹50,000">₹25,000 – ₹50,000</option>
+                <option value="₹50,000 – ₹1,00,000">₹50,000 – ₹1,00,000</option>
+                <option value="Above ₹1,00,000">Above ₹1,00,000</option>
+                <option value="Let's Discuss">Let's Discuss</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="formDescription">Project Description *</label>
+              <textarea id="formDescription" class="form-textarea" placeholder="Tell me about your project, goals, and any specific requirements…" required></textarea>
+            </div>
+
+            <button type="submit" class="form-submit" id="formSubmitBtn">Send Project Inquiry →</button>
+            <div id="formMessage" class="form-message"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT SECTION ========== -->
+  <section class="contact" id="contact">
+    <div class="contact-glow" aria-hidden="true"></div>
+    <div class="container">
+      <div class="contact-content reveal">
+        <span class="section-label">Get in Touch</span>
+        <h2>LET'S CREATE SOMETHING <span class="accent-text">GREAT.</span></h2>
+
+        <div class="contact-info">
+          <div class="contact-info-item">
+            <span class="icon">👤</span>
+            <span>Shashank Chawale</span>
+          </div>
+          <div class="contact-info-item">
+            <span class="icon">📍</span>
+            <span>Nagpur, Maharashtra, India</span>
+          </div>
+          <div class="contact-info-item">
+            <span class="icon">✉️</span>
+            <a href="mailto:shashankchawale@gmail.com" style="color: inherit; text-decoration: underline; text-underline-offset: 3px;">shashankchawale@gmail.com</a>
+          </div>
+          <div class="contact-info-item">
+            <span class="icon">💬</span>
+            <a href="https://wa.me/917083082721" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline; text-underline-offset: 3px;">+91 7083082721</a>
+          </div>
+          <div class="contact-info-item">
+            <span class="icon">🟢</span>
+            <span>Available for Freelance Work</span>
+          </div>
+        </div>
+
+        <div class="contact-buttons">
+          <a href="#inquiry" class="btn-primary">Contact Me</a>
+          <a href="https://wa.me/917083082721?text=Hello%20Shashank,%20I%20would%20like%20to%20discuss%20a%20website%20project" target="_blank" rel="noopener noreferrer" class="btn-outline" id="whatsappBtn">
+            WhatsApp Me (+91 7083082721)
+          </a>
+          <a href="mailto:shashankchawale@gmail.com" class="btn-outline" id="emailBtn">
+            Email Me (shashankchawale@gmail.com)
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== GIANT FOOTER (Direct Handshake Translation) ========== -->
+  <footer class="footer">
+    <div class="container">
+      <!-- Upper Footer Columns -->
+      <div class="footer-top-grid reveal">
+        <div class="footer-brand-col">
+          <h3 class="footer-title">The Career & Developer Network</h3>
+          <p class="footer-desc">Building modern digital experiences, intelligent applications, and scalable web solutions.</p>
+          <div class="footer-badges">
+            <a href="#contact" class="store-badge">
+              <span class="badge-icon">📍</span>
+              <span class="badge-text"><small>Based in</small><strong>Nagpur, India</strong></span>
+            </a>
+            <a href="#inquiry" class="store-badge">
+              <span class="badge-icon">⚡</span>
+              <span class="badge-text"><small>Status</small><strong>Open for Projects</strong></span>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-col-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#solutions">Quick Solutions</a></li>
+            <li><a href="#projects">Featured Projects</a></li>
+            <li><a href="#services">Services</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Services</h4>
+          <ul class="footer-col-links">
+            <li><a href="#services">Business Websites</a></li>
+            <li><a href="#services">E-Commerce Stores</a></li>
+            <li><a href="#services">AI/ML Applications</a></li>
+            <li><a href="#services">Website Redesign</a></li>
+            <li><a href="#services">Speed Optimization</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Projects</h4>
+          <ul class="footer-col-links">
+            <li><a href="#projects">Cotton Mitra (AI)</a></li>
+            <li><a href="https://guna-pharma-org.vercel.app/" target="_blank" rel="noopener noreferrer">GUNA PHARMA ↗</a></li>
+            <li><a href="#inquiry">Custom Architecture</a></li>
+            <li><a href="#skills">Tech Stack</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Connect</h4>
+          <ul class="footer-col-links">
+            <li><a href="mailto:shashankchawale@gmail.com">shashankchawale@gmail.com</a></li>
+            <li><a href="https://wa.me/917083082721" target="_blank" rel="noopener noreferrer">WhatsApp (+91 7083082721)</a></li>
+            <li><a href="https://linkedin.com/in/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Giant Handshake-Style Brand Headline -->
+      <div class="giant-footer-brand-wrap reveal">
+        <h1 class="giant-footer-brand">SHASHANK</h1>
+      </div>
+
+      <!-- Bottom Legal Bar -->
+      <div class="footer-bottom-bar">
+        <div class="footer-copyright">
+          © 2026 Shashank Chawale. All Rights Reserved.
+        </div>
+        <div class="footer-legal-links">
+          <a href="#home">Privacy Policy</a>
+          <a href="#home">Accessibility</a>
+          <a href="#home">Terms of Service</a>
+        </div>
+        <div class="footer-social-icons">
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
