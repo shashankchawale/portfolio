@@ -629,7 +629,7 @@ button, input, textarea, select {
 
 .trust-cards-row {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
   gap: 14px;
 }
 
